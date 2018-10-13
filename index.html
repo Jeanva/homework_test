@@ -13,10 +13,10 @@
         <div class='main'>
             <div class="left">
                 <ul class='tabbar'>
-                    <li>DashBoard</li>
-                    <li><a href="#"><span></span>Agent</a></li>
-                    <li><a href="#"><span></span>My Cruise</a></li>
-                    <li><a href="#"><span></span>Help</a></li>
+                    <li class='dashboard'>DashBoard</li>
+                    <li><a href="#"><span class='agent'>Agent</span></a></li>
+                    <li><a href="#" class='my'>My Cruise</a></li>
+                    <li><a href="#" class='help'>Help</a></li>
                 </ul>
                 <div class='history_block'>
                     <span class='history'>History</span>
@@ -92,13 +92,13 @@
                                             <li>Ubuntu</li>
                                             <li>Chrome</li>
                                         </ul>
-                                        <div class='confirm_pop' style='position:absolute;z-index:1;margin-top:10px;margin-left:-10px;visibility:hidden'>
+                                        <div class='confirm_pop' style='visibility:hidden'>
                                             <span class='tag_rotate'></span>
                                             <div class='confirm_title'>
                                                 <span>Separete multiple resource name with commas</span><span>X</span>
                                             </div>
                                             <div class='add_input'>
-                                                <input type="text">
+                                                <input type="text" onchange='getInputVal()'>
                                             </div>
                                             <div class='confirm_btns'>
                                                 <div class='add_confirm'>Add Resources</div>
@@ -107,6 +107,45 @@
                                         </div>
                                     </div>
                                     
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class='item_thumbnail'>
+                                <img src="./img/win10.jpg"  alt="">
+                            </span>
+                            <div class='item_info'>
+                                <div class='item_title'>
+                                    <span class='terminal'>bsjodfdsdo08.thoughtworks.com</span>
+                                    <span class='tag building'>building</span>
+                                    <span class='ip_addr'>192.168.1.243</span>
+                                    <span class='file_dir'>&nbsp;var/lib/cruise-agent</span>
+                                </div>
+                                <div class='item_action'>
+                                    <div class='action_list'>
+                                        <ul>
+                                            <li class='addAction'>+</li>
+                                            <li>FireFox</li>
+                                            <li>Safari</li>
+                                            <li>Ubuntu</li>
+                                            <li>Chrome</li>
+                                        </ul>
+                                        <div class='confirm_pop' style='visibility:hidden'>
+                                            <span class='tag_rotate'></span>
+                                            <div class='confirm_title'>
+                                                <span>Separete multiple resource name with commas</span><span onclick='closeModal()'>X</span>
+                                            </div>
+                                            <div class='add_input'>
+                                                <input type="text" onchange='getInputVal()'>
+                                            </div>
+                                            <div class='confirm_btns'>
+                                                <div class='add_confirm'>Add Resources</div>
+                                                <div class='cancel_confirm' onclick="closeModal()">Cancel</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='btn_deny'>Deny</div>
                                 </div>
                             </div>
                         </li>
@@ -131,52 +170,13 @@
                                             <li>Ubuntu</li>
                                             <li>Chrome</li>
                                         </ul>
-                                        <div class='confirm_pop' style='position:absolute;z-index:1;margin-top:10px;margin-left:-10px;visibility:hidden'>
+                                        <div class='confirm_pop' style='visibility:hidden'>
                                             <span class='tag_rotate'></span>
                                             <div class='confirm_title'>
                                                 <span>Separete multiple resource name with commas</span><span>X</span>
                                             </div>
                                             <div class='add_input'>
-                                                <input type="text">
-                                            </div>
-                                            <div class='confirm_btns'>
-                                                <div class='add_confirm'>Add Resources</div>
-                                                <div class='cancel_confirm'>Cancel</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <span class='item_thumbnail'>
-                                <img src="./img/win10.jpg"  alt="">
-                            </span>
-                            <div class='item_info'>
-                                <div class='item_title'>
-                                    <span class='terminal'>bsjodfdsdo08.thoughtworks.com</span>
-                                    <span class='tag idle'>idle</span>
-                                    <span class='ip_addr'>192.168.1.243</span>
-                                    <span class='file_dir'>&nbsp;var/lib/cruise-agent</span>
-                                </div>
-                                <div class='item_action'>
-                                    <div class='action_list'>
-                                        <ul>
-                                            <li class='addAction'>+</li>
-                                            <li>FireFox</li>
-                                            <li>Safari</li>
-                                            <li>Ubuntu</li>
-                                            <li>Chrome</li>
-                                        </ul>
-                                        <div class='confirm_pop' style='position:absolute;z-index:1;margin-top:10px;margin-left:-10px;visibility:hidden'>
-                                            <span class='tag_rotate'></span>
-                                            <div class='confirm_title'>
-                                                <span>Separete multiple resource name with commas</span><span>X</span>
-                                            </div>
-                                            <div class='add_input'>
-                                                <input type="text">
+                                                <input type="text" onchange='getInputVal()'>
                                             </div>
                                             <div class='confirm_btns'>
                                                 <div class='add_confirm'>Add Resources</div>

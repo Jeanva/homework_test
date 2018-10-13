@@ -59,6 +59,7 @@ a:hover{ color:#00b4cf; text-decoration: none;}
 }
 .main .left ul.tabbar>li>a:hover{
     background-color:#435466;
+    color:#00b4CF;
 }
 .main .left .history_block{
     padding:0 20px 20px;
@@ -88,6 +89,18 @@ a:hover{ color:#00b4cf; text-decoration: none;}
     text-decoration: none;
     font-size:12px;
     color:#00b4CF;
+}
+.dashboard::before,.agent::before,.my::before,.help::before{
+    background-image: url('../img/dashboard.png');
+    content:'';
+    position: relative;
+    display: inline-block;
+    width:20px;
+    height:20px;
+    margin-right:1rem;
+}
+.agent::before{
+    background-image: url('../img/dashboard.png');
 }
 .main .right{
     flex:3;
@@ -309,6 +322,10 @@ ul.filter_tab>li.actived{
     height:120px;
     padding:20px;
     width:540px;
+    position:absolute;
+    z-index:1;
+    margin-top:10px;
+    margin-left:-10px;
 }
 .tag_rotate{
     background: #fff;
